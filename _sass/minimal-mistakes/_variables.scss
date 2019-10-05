@@ -6,11 +6,11 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 16 !default;
+$doc-font-size: 12 !default;
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
-$indent-var: 1.3em !default;
+$indent-var: 0.9em !default;  // default: 1.3em
 
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
@@ -29,11 +29,21 @@ $bodoni: "Bodoni MT", serif !default;
 $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
-$global-font-family: $sans-serif !default;
-$header-font-family: $sans-serif !default;
-$caption-font-family: $serif !default;
+$global-font-family: 'Nanum Gothic', sans-serif;
+$header-font-family: 'Nanum Gothic', sans-serif;
+$caption-font-family: 'Nanum Gothic', serif;
+$font-family: 'Nanum Gothic', serif;
 
 /* type scale */
+$type-size-1: 1.4em !default;
+$type-size-2: 1.2em !default;
+$type-size-3: 1.6em !default;  // post headline size
+$type-size-4: 1.25em !default;  // category headline size
+$type-size-5: 1.0em !default;  // name
+$type-size-6: 0.8em !default;  // bio, social
+$type-size-7: 0.6em !default;  // footer size
+$type-size-8: 0.5em !default;
+/*
 $type-size-1: 2.441em !default; // ~39.056px
 $type-size-2: 1.953em !default; // ~31.248px
 $type-size-3: 1.563em !default; // ~25.008px
@@ -42,6 +52,7 @@ $type-size-5: 1em !default; // ~16px
 $type-size-6: 0.75em !default; // ~12px
 $type-size-7: 0.6875em !default; // ~11px
 $type-size-8: 0.625em !default; // ~10px
+*/
 
 /*
    Colors

@@ -15,7 +15,7 @@
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-
+  display:none;
   @include breakpoint($large) {
     float: left;
     width: calc(#{$right-sidebar-width-narrow} - 1em);
@@ -28,6 +28,7 @@
     }
 
     &.sticky {
+      display:block;
       overflow-y: auto;
       /* calculate height of nav list
          viewport height - nav height - masthead x-padding
@@ -41,8 +42,8 @@
   }
 
   > * {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
   }
 
   h2,
@@ -87,7 +88,7 @@
       @include clearfix();
       position: -webkit-sticky;
       position: sticky;
-      top: 2em;
+      top: em;
       float: right;
     }
   }
@@ -140,9 +141,10 @@
 .author__content {
   display: table-cell;
   vertical-align: top;
-  padding-left: 15px;
-  padding-right: 25px;
-  line-height: 1;
+  padding-left: 0px;
+  padding-right: 5px;
+  padding-top: 25px;
+  line-height: 0.5;
 
   @include breakpoint($large) {
     display: block;
@@ -174,8 +176,8 @@
   margin: 0;
 
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 }
 

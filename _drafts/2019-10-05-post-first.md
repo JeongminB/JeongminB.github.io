@@ -1,9 +1,7 @@
 ---
 title: "테스트"
-categories:
-  - GAN
-tags:
-  - "잡담"
+categories: [Deep Learning, GANs]
+tags: 
 ---
 
 테스트입니다.

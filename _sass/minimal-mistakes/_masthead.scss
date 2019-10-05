@@ -15,7 +15,7 @@
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
+    padding: 0.4em;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -51,6 +51,7 @@
   align-self: center;
   font-weight: bold;
   z-index: 20;
+  font-size: $type-size-1;
 }
 
 .site-subtitle {
@@ -90,4 +91,86 @@
     padding-right: 2em;
     font-weight: 700;
   }
+}
+
+$menu-width: 150px;
+
+.site-category{  /*menu bar*/
+  border-bottom: 1px solid $border-color;
+  font-size:14px;
+  list-style-type: none;
+   
+  @include clearfix;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.0em;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: $sans-serif-narrow;
+
+  @include breakpoint($x-large) {
+    max-width: $max-width;
+  }
+
+  justify-content: flex-start;
+
+}
+
+.site-category li{
+  display: block;
+}
+
+.site-category li a{
+  background: $background-color;
+  display:inline-block;
+  width:$menu-width;
+  line-height:35px;
+  padding:0px 0px 0px 15px;
+  text-decoration:none;
+  text-align:left;   
+}
+
+.site-category li ul{
+  display:none;
+  position:absolute;
+  width:$menu-width;
+  z-index:1;
+  padding:0px;
+  margin:0px;
+}
+
+.site-category li:hover ul{
+display:block;
+}
+
+  .site-category li li {
+  background: $border-color;
+  display:block;
+  margin:0px;
+  padding:0px;
+  width:$menu-width
+  }
+
+  .site-category li:hover li a{
+  background:none;
+  }
+
+  .site-category li ul a{
+  display:block;
+  height:35px;
+  font-size:12px;
+  margin:0px;
+  padding:0px 0px 0px 15px;
+  }
+
+.site-category li ul a:hover, .menubar li ul li:hover a{
+  background:#555555;
+  border:0px;
+  color:#ffffff;
+  text-decoration:none;
 }

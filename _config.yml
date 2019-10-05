@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" #, "default", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "ko"
-title                    : "まとめ"
+title                    : "知識貯藏所"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "BJM"
@@ -109,8 +109,8 @@ analytics:
 author:
   name             : "BJM"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "잘하자"
-  location         : "Korea"
+  bio              : "열심히 하세요"
+  location         : "한국"
   email            : "jaymin.bae@gmail.com"
   links:
     - label: "Email"
@@ -287,10 +287,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true
-      share: true
-      related: true
+      share: false
+      related: false
   # _pages
   - scope:
       path: "_pages"

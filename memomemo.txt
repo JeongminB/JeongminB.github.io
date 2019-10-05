@@ -1,0 +1,11 @@
+chcp 65001
+
+bundle exec jekyll serve
+bundle exec jekyll serve --drafts
+
+--------------------
+
+_includes/masthead.html : 메뉴
+_pages/about.md : About 페이지
+category : 카테고리 관리
+assets/res : 리소스 모음
