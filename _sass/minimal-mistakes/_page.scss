@@ -2,7 +2,16 @@
    SINGLE PAGE/POST
    ========================================================================== */
 
-body {line-height: 165%}
+
+body {line-height: 160%}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: $type-size-6;
+}
+
 
 #main {
   @include clearfix;

@@ -94,7 +94,7 @@
   }
 }
 
-$menu-width: 150px;
+$menu-width: 100px;
 
 .site-category{  /*menu bar*/
   border-bottom: 1px solid $border-color;
@@ -112,7 +112,7 @@ $menu-width: 150px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  font-family: $sans-serif-narrow;
+  font-family: $global-font-family;
 
   @include breakpoint($x-large) {
     max-width: $max-width;
@@ -134,6 +134,7 @@ $menu-width: 150px;
   padding:0px 0px 0px 15px;
   text-decoration:none;
   text-align:left;   
+  font-weight: bold;
 }
 
 .site-category li ul{
@@ -146,28 +147,28 @@ $menu-width: 150px;
 }
 
 .site-category li:hover ul{
-display:block;
+  display:block;
 }
 
-  .site-category li li {
+.site-category li li {
   background: $border-color;
   display:block;
   margin:0px;
   padding:0px;
   width:$menu-width
-  }
+}
 
-  .site-category li:hover li a{
+.site-category li:hover li a{
   background:none;
-  }
+}
 
-  .site-category li ul a{
+.site-category li ul a{
   display:block;
   height:35px;
   font-size:12px;
   margin:0px;
   padding:0px 0px 0px 15px;
-  }
+}
 
 .site-category li ul a:hover, .menubar li ul li:hover a{
   background:#555555;
