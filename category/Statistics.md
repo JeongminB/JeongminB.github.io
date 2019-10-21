@@ -1,5 +1,5 @@
 ---
 layout: category
-title: 'Fundamentals / Statistics'
-permalink: '/F/Statistics'
+title: '이것저것 / Statistics'
+permalink: '/B/Statistics'
 ---

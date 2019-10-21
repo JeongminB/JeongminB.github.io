@@ -1,7 +1,5 @@
 ---
 title: "Generative Adversarial Networks"
-layout: category
-permalink: /DL/GANs
-category: GANs
+layout: categories
 author_profile: true
 ---
