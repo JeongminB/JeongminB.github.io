@@ -162,3 +162,5 @@ $$\begin{aligned} \mu = E[Z] &= \sum_{z=0}^1 z f_Z(z) = 0(1-p) + 1(p) \\
 $$\begin{aligned}
 E[X] &= E[Z_1 + \cdots + Z_n] = E[Z_1] + \cdots + E[Z_n] = np \\
  V[X] &= V[Z_1 + \cdots + Z_n] = V[Z_1] + \cdots + V[Z_n] = np(1-p) \end{aligned}$$
+
+ 기댓값은 기본 성질 때문에 덧셈의 기댓값을 기댓값의 덧셈으로 나눌 수 있지만, 덧셈의 분산은 확률변수들이 모두 서로 독립인 경우에만 위처럼 찢을 수 있다는 점에 유의바랍니다.

@@ -95,13 +95,24 @@ $$ \mu_X = E[X] = \sum_i x_i \, \underbrace{p(x_i)}_{\text{PMF}} $$
 
 $$ \mu_X = E[X] = \int x \, \underbrace{p(x)}_{\text{PDF}} \,dx $$
 
-샘플의 실현값과 샘플이 발생할 확률을 모두 더하면 기댓값이 나옵니다. 위에서 나온 공평한 주사위의 기댓값은 3.5입니다.
+<strong>샘플의 실현값과 샘플이 발생할 확률을 곱해서 모두 더하면 기댓값</strong>이 나옵니다. 위에서 나온 공평한 주사위의 기댓값은 3.5입니다. 기댓값 표기에서 대괄호 $[\cdot]$ 는 <strong>functional</strong> (범함수)임을 나타내는 것입니다. function이 숫자를 받아서 숫자를 내놓는다면, functional은 함수를 받아서 숫자를 내놓는다고 생각합시다.
 
 $$\bar x = \frac{1}{N} \sum_{i=1}^N x_i$$
 
 <strong><font color="#3367E5">표본평균</font></strong>(sample mean)은 data points의 산술평균(arithmetic mean)을 구할 때 씁니다. $\mu$는 보통 표본공간 전체에서의 평균인 확률변수의 기댓값 의미하고 (=모평균, population mean), $\bar x$는 가지고 있는 샘플들의 평균, 데이터 포인터 평균을 표기할 때 씁니다.
 
 만약 샘플의 수 $N$이 충분히 크다면 $\bar x$는 $\mu$에 가까워집니다 (Law of large numbers). 주사위 던지기 결과 하나의 값은 어떤 값이 나올지 알 수 없지만, 주사위를 많이 던져서 나온 수의 평균을 내면 3.5에 가까운 값이 나올 것입니다.
+
+#### ◇ 기댓값의 성질
+
+$$\begin{aligned}
+&E[X+c] = E[X] + c \\
+&E[cX] = c E[X] \\
+&E[X+Y] = E[X] + E[Y] \\
+&E[XY] = E[X]\,E[Y] \,, \quad \text{if } X \perp\!\!\!\perp Y
+\end{aligned}$$
+
+기댓값의 기본 성질입니다. 마지막은 $X$와 $Y$가 독립인 경우에만 성립하니 주의합시다.
 
 ---
 
@@ -123,3 +134,15 @@ $$ \sigma = \sqrt{V[X]} $$
 
 <strong><font color="#3367E5">표준편차</font></strong>(standard deviation)는 분산의 square root입니다. 분산의 계산 과정에 제곱이 있기 때문에, 분산과 실제 편차의 수준이 직관적으로 맞지 않습니다. 단위를 맞추기 위해서 제곱근을 거치게 됩니다.
 </div>
+
+#### ◇ 분산의 성질
+
+$$\begin{aligned}
+&V[X] \geq 0 \\
+&V[X] = E[(X-\mu)^2] = E[X]^2 - \mu^2 \\
+&V[aX + b] = a^2V[X] \\
+&V[X+Y] = V[X]+V[Y] \,, \quad \text{if } X \perp\!\!\!\perp Y \\
+&V[X+Y] = V[X]+V[Y] +2\text{Cov}(X,Y)\,, \quad \text{if } X \not\! \perp\!\!\!\perp Y
+\end{aligned}$$
+
+분산은 항상 양수이며, 상수항은 분산과 무관하고 상수배는 제곱의 형태를 띕니다. 덧셈의 분산을 분산의 덧셈으로 나누려면 두 확률변수가 독립이어야 한다는 점에 유의 바랍니다.
