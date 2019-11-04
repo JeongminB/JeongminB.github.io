@@ -84,7 +84,7 @@ $${n\choose k} = {}_{n}\mathrm{C}_{k} = \frac{_{n}\mathrm{P}_{k}}{k!}
 
 ---
 
-## ◆ 이항분포의 기댓값, 분산 - 1
+## ◆ 이항분포의 기댓값, 분산 - (1)
 
 <div>
 
@@ -134,7 +134,7 @@ E[X]  &= np \sum_{k^\prime=0}^{n^\prime} {}_{n^\prime}\mathrm{C}_{k^\prime}  \,p
 
 ---
 
-## ◆ 이항분포의 기댓값, 분산 - 2
+## ◆ 이항분포의 기댓값, 분산 - (2)
 
 $$ Z_1, Z_2, \cdots , Z_n \overset{\text{i.i.d.}} \sim \text{B}(1,p) $$
 
