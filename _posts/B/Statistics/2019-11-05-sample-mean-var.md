@@ -5,18 +5,18 @@ categories: [Basics, Statistics]
 
 ## ◆ Bias of an estimator
 
-우리가 관심 있는 것이 모집단의 통계량인 모수 (parameter)인데 모집단이 너무 커서 직접 이를 구할 수 없는 경우, 표본들을 관찰해서 모수를 <strong>추정</strong> (estimation)을 하게 됩니다. 표본에서 구해지는 '표본평균', '표본분산'이라는 <strong>추정량</strong>을 통해서 (근사적인) 모수를 알고자 하는 것이 목표입니다.
+우리가 관심 있는 것이 모집단의 통계량인 모수 (parameter)인데 모집단이 너무 커서 이를 직접 구할 수 없는 경우, 표본들을 관찰해서 모수를 <strong>추정</strong> (estimation)을 하게 됩니다. 표본에서 구해지는 '표본평균', '표본분산'이라는 <strong>추정량</strong>을 통해서 (근사적인) 모수를 알고자 하는 것이죠.
 
-<strong><font color="#3367E5">추정량</font></strong> $\hat \theta$(estimator)이란 관찰된 표본들로부터 모수 $\theta$(parameter)를 구하는 방법(rule), 함수, 혹은 모수를 추정하는 통계량을 말합니다. 추정량은 표본에 따라 값이 달라지기 때문에 확률변수입니다. 당연히 실제 모수와는 값의 차이가 있을 것이고, 모수를 잘 추정해야 좋은 추정량이라고 말할 수 있을 것입니다.
+<strong><font color="#3367E5">추정량</font></strong> $\hat \theta$(estimator)이란 관찰된 표본들로부터 모수 $\theta$(parameter)를 구하는 방법(rule), 함수, 혹은 단순히 모수를 추정하는 통계량을 말합니다. 추정량은 표본에 따라 값이 달라지기 때문에 <strong>확률변수</strong>입니다. 당연히 실제 모수와는 값의 차이가 있을 것이고, 모수를 잘 추정해야 좋은 추정량이라고 말할 수 있을 것입니다.
 
 $$\begin{aligned}
 \text{error: }& \hat \theta(x) - \theta \\
 \text{bias: }& E(\hat \theta) - \theta
 \end{aligned}$$
 
-모수와 추정량의 차이를 나타내는 값 중, <strong><font color='#FF7D33'>편의</font></strong>(偏倚, bias)는 추정량의 기댓값과 모수의 차이를 말합니다. 이 편의가 0인 추정량을 <strong><font color="#3367E5">불편 추정량</font></strong> (unbiased estimator)이라고 말합니다.
+어떤 추정량이 바람직한가를 평가할 때 <strong><font color='#FF7D33'>편의</font></strong>(偏倚, bias)가 0인지를 따지기도 합니다. 편의는 추정량의 '기댓값'과 모수의 차이를 말합니다. 추정량 $\hat \theta$이 $E(\hat \theta) = \theta$을 만족할 때, 이러한 추정량을 <strong><font color="#3367E5">불편 추정량</font></strong> (unbiased estimator)이라고 말합니다.
 
-불편 추정량의 예시로는 <strong>표본평균, 표본분산</strong> 등이 있습니다. 즉, 표본평균의 기댓값은 모수인 확률변수의 기댓값과 같고, 표본분산의 기댓값은 확률변수의 분산과 같습니다.
+불편 추정량의 예시로는 <strong>표본평균, 표본분산</strong> 등이 있습니다. 정리하면, <strong>표본평균의 기댓값은 확률변수의 기댓값과 같고, 표본분산의 기댓값은 확률변수의 분산과 같습니다.</strong> 아래에서는 표본평균과 표본분산의 정의와 이들이 실제로 불편 추정량인지을 증명해보겠습니다.
 
 ---
 
@@ -24,7 +24,7 @@ $$\begin{aligned}
 
 $$ \mu = E[X] = \sum_i x_i \, \underbrace{p(x_i)}_{\text{PMF}} $$
 
-확률변수 $X$의 기댓값을 $\mu$라고 합시다. $X$에서 샘플링한 $n$개의 표본에 대해서 구하는 표본평균은 아래와 같이 구할 수 있습니다. 물론 여기에는 <strong>독립동일분포</strong>를 갖는 $n$개의 표본이라는 가정이 암시되어 있습니다.
+확률변수 $X$의 기댓값을 $\mu$라고 합시다. $X$에서 샘플링한 $n$개의 표본에 대해서 구하는 표본평균은 아래와 같이 구할 수 있습니다. 여기에는 $n$개의 표본을 각각 독립독일분포인 확률분포로 가정하게 됩니다.
 
 $$\bar X = \frac{1}{n} \sum_{i=1}^n X_i$$
 
