@@ -1,6 +1,6 @@
 ---
 title: "RNN, LSTM, seq2seq, Attention 훑어보기"
-categories: [DL,UC]
+categories: [DL, DL-UC]
 ---
 
 글의 주된 내용은 Attention이므로 RNN, LSTM, seq2seq에 대해서는 간단하게 다룹니다. Transformer에 대해서는 따로 다루겠습니다.
