@@ -70,7 +70,7 @@ $$ \int_a^b |f(x)|^2dx <\infty $$
 
 Hilbert space 중 하나인 $L^2$ space에서 함수 $f(x)$는 위 조건을 만족합니다. 이 공간을 이루는 원소는 $L^2$ function, 혹은 다른 말로 square-integrable function 입니다. 연속함수도 염언히 더하거나 곱할 수 있고 scalar 연산에도 자유롭기 때문에 vector space에 해당합니다.
 
-당분간 시간에 대한 신호만 다룰 건데, 시구간 $[a, b]$ 사이에서 두 함수의 내적은 다음과 같이 정의합니다.
+당분간 시간에 대한 신호만 다룰 건데, 시구간 $[t_1, t_2]$ 사이에서 두 함수의 내적은 다음과 같이 정의합니다.
 
 $$ \left\langle f, g \right\rangle = \int_{t_1}^{t_2} f(t) g^*(t)dt $$
 
