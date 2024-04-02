@@ -114,26 +114,28 @@
   </div>
 </div>
 </section>
-<!-- 
+
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <h2 class="title is-2">Teaser</h2>
-        <video poster="" autoplay controls muted loop playsinline height="100%">
-          <source src=".\videos\teaser.mp4"
-                  type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-justified">
-          Existing field-based deformable 3D Gaussian Splatting methods predict Gaussian deformations at similar locations to be entangled. 
-          As a result, dynamic Gaussians influence adjacent static Gaussians, causing static regions to move along the nearby dynamic regions and exhibit degraded quality (<em>left</em>). 
-          Our model solves the problem by employing <b>per-Gaussian latent embeddings</b> to predict deformation and achieves a clearer representation of dynamic motion (<em>right</em>).
-        </h2>
-      </div>
+    <div class="container has-text-centered">
+      <h2 class="title is-2">Abstract</h2>
+      <h2 class="subtitle has-text-justified">
+        As 3D Gaussian Splatting (3DGS) provides fast and high-quality novel view synthesis, it is a natural extension to deform a canonical 3DGS to multiple frames. 
+        However, previous works fail to accurately reconstruct dynamic scenes, especially 1) static parts moving along nearby dynamic parts, and 2) some dynamic areas are blurry. 
+        We attribute the failure to the wrong design of the deformation field, which is built as a coordinate-based function. 
+        This approach is problematic because 3DGS is a mixture of multiple fields centered at the Gaussians, not just a single coordinate-based framework. 
+        To resolve this problem, we define the deformation as a function of per-Gaussian embeddings and temporal embeddings. 
+        Moreover, we decompose deformations as coarse and fine deformations to model slow and fast movements, respectively. 
+        Also, we introduce an efficient training strategy for faster convergence and higher quality. 
+        <br>
+        <br>
+      </h2>
+    </div>
     </div>
   </div>
-</section> -->
-
+</section>
 
 <section class="hero is-small">
   <div class="hero-body">
