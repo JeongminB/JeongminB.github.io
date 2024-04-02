@@ -223,10 +223,10 @@
                   type="video/mp4">
         </video>
         <h2 class="subtitle has-text-justified">
-          <p>Our SlowFast deformation consists of two decoders, each in charge of coarse and fine deformation. 
-            The video above is the result of rendering each deformation removed from the trained model.
+          <p>Our corse-fine deformation consists of two decoders, each in charge of coarse and fine deformation. 
+            The video above is the result of rendering each deformation removed from the trained model. <br>
             <b>(a)</b> When both deformations are removed, rendering yields an image in canonical space. 
-            <b>(b)</b> Rendering with the coarse deformation, which handles large or slow changes in the scene, produces results similar to the full rendering. 
+            <b>(b)</b> Rendering with the coarse deformation only, which handles large or slow changes in the scene, produces results similar to the full rendering. 
             <b>(c)</b> On the other hand, fine deformation is responsible for fast or detailed changes in the scene, yielding rendering similar to canonical space.
             <b>(d)</b> Our full rendering results are the result of the addition of coarse and fine deformation to the canonical space. 
           </p>
@@ -240,11 +240,11 @@
         <h2 class="subtitle has-text-justified">
           <p>We visualize the magnitude of position changes in the deformation of Gaussian parameters.
             <b>Coarse deformation</b> (<em>blue</em>) captures <b>large and slow changes</b>, such as the movement of
-            the head and torso, while <b>fine deformation</b> (<em>red</em>) is responsible for the <b>fast and detailed
+            the head and torso, while <b>fine deformation</b> (<em>red</em>) is responsible for <b>fast and detailed
             changes</b> of arms, tongs, shadows, <em>etc</em>. 
-            By downscaling and sampling the temporal embedding grid for coarse decoder, 
+            <!-- By downscaling and sampling the temporal embedding grid for coarse decoder, 
             our model can effectively separate and model slow and fast deformations in the scene. 
-            Please see the main paper for the details of our method.
+            Please see the main paper for the details of our method. -->
           </p>
         </h2>
       </div>
