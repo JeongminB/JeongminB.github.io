@@ -193,17 +193,18 @@
 </div>
 </section>
 
-<section class="section">
+<section class="hero is-small">
+  <div class="hero-body">
   <div class="container is-max-desktop">
-    <div class="is-centered has-text-centered">
+  <div class="is-centered has-text-centered">
       <!-- Comparison. -->
       <h2 class="title is-2">Analysis</h2>
         <h2 class="title is-4">Deformation components</h2>
-        <video poster="" autoplay controls muted loop playsinline width="70%">
+        <video poster="" autoplay controls muted loop playsinline width="100%">
           <source src=".\videos\deformation.mp4"
                   type="video/mp4">
         </video>
-        <div class="content has-text-justified">
+        <h2 class="subtitle has-text-justified">
           <p>Our SlowFast deformation consists of two decoders, each in charge of coarse and fine deformation. 
             The video above is the result of rendering each deformation removed from the trained model.
             <b>(a)</b> When both deformations are removed, rendering yields an image in canonical space. 
@@ -211,14 +212,14 @@
             <b>(c)</b> On the other hand, fine deformation is responsible for fast or detailed changes in the scene, yielding rendering similar to canonical space.
             <b>(d)</b> Our full rendering results are the result of the addition of coarse and fine deformation to the canonical space. 
           </p>
-        </div>
+        </h2>
 
         <h2 class="title is-4">Visualization of the magnitude of deformation</h2>
         <video poster="" autoplay controls muted loop playsinline width="70%">
           <source src=".\videos\magnitude.mp4"
                   type="video/mp4">
         </video>
-        <div class="content has-text-justified">
+        <h2 class="subtitle has-text-justified">
           <p>We visualize the magnitude of position changes in the deformation of Gaussian parameters.
             <b>Coarse deformation</b> (<em>blue</em>) captures <b>large and slow changes</b>, such as the movement of
             the head and torso, while <b>fine deformation</b> (<em>red</em>) is responsible for the <b>fast and detailed
@@ -227,9 +228,10 @@
             our model can effectively separate and model slow and fast deformations in the scene. 
             Please see the main paper for the details of our method.
           </p>
-        </div>
+        </h2>
       </div>
   </div>
+</div>
 </section>
 
 </body>
