@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Sync-NeRF</title>
+
+    <meta name="description" content="Sync-NeRF: Generalizing Dynamic NeRFs to Unsynchronized Videos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+        <!--FACEBOOK-->
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="682">
+    <meta property="og:image:height" content="682">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://seoha-kim.github.io/sync-nerf"/>
+    <meta property="og:title" content="Sync-NeRF" />
+    <meta property="og:description" content="Project page for Sync-NeRF: Generalizing Dynamic NeRFs to Unsynchronized Videos." />
+
+        <!--TWITTER-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sync-NeRF" />
+    <meta name="twitter:description" content="Project page for Sync-NeRF: Generalizing Dynamic NeRFs to Unsynchronized Videos." />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍸</text></svg>">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
+    <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+	
+	<link rel="stylesheet" href="css/dics.min.css">
+    <script src="scripts/dics.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', domReady);
+        function domReady() {
+            for (const e of document.querySelectorAll(".b-dics")) {
+                new Dics({
+                    container: e,
+                    textPosition: "top"
+                });
+            }
+        }
+    </script>
+	
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>Sync-NeRF</b>: Generalizing Dynamic NeRFs 
+                <br> to Unsynchronized Videos <br>
+                <small>
+                    AAAI 2024
+                </small>
+            </h2>
+        </div>
+		
+		<div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <b>
+                        Seoha Kim*
+                        </b>
+                        <br>Yonsei University
+                    </li>
+					<li>
+                        <b>
+                        Jeongmin Bae*
+                        </b>
+                        <br>Yonsei University
+                    </li>
+					<li>
+                        <b>
+                        Youngsik Yun
+                        </b>
+                        <br>Yonsei University
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <b>
+                        Hahyun Lee
+                        </b>
+                        <br>ETRI
+                    </li>
+					<li>
+                        <b>
+                        Gun Bang
+                        </b>
+                        <br>ETRI
+                    </li>
+                    <li>
+                        <b>
+                        Youngjung Uh
+                        </b>
+                        <br>Yonsei University
+                    </li> 				
+                </ul>
+            </div>
+        </div>
+		
+		<div class="row">
+            <div class="col-md-12 text-center">
+                *Denotes equal contribution <br>
+                <a href="https://vilab.yonsei.ac.kr/">Visual Intelligence Lab at Yonsei University</a><br>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/abs/2310.13356">
+                            <image src="img/syncnerf_paper_image.png" height="100px"></image>
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/seoha-kim/Sync-NeRF" target="_blank">
+                            <image src="img/github.png" height="100px"></image>
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/drive/folders/1wvLtucVrmFf7fj-kWr-HMk3boaI46cIX">
+                            <image src="img/dataset_fox.png" height="100px"></image>
+                                <h4><strong>Dataset</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1brWQBLljul7b28ZSZMQXCl0Gg9kOYtEA/view?usp=sharing">
+                            <image src="img/AAAI.png" height="100px"></image>
+                                <h4><strong>Poster</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <br>
+                <h3>
+                    Teaser
+                </h3>
+                <video poster="" id="teaser" autoplay controls muted loop playsinline width="100%;">
+                    <source src="videos/teaser.mp4"
+                            type="video/mp4">
+                </video><br>
+                <p class="text-justify">
+                    The commonly used Plenoptic Video Dataset in 4D scene reconstruction contains an unsynchronized video. If the baseline includes the unsynchronized view in the training set, it fails to reconstruct the motion around the unsynchronized view. In the same settings, our method is superior to the baseline.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://www.youtube.com/embed/BnBbRge5LgU" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <!-- <image src="img/rays.jpg" class="img-responsive" alt="overview"><br> -->
+                <p class="text-justify">
+                    Recent advancements in 4D scene reconstruction using neural radiance fields (NeRF) have demonstrated the ability to represent dynamic scenes from multi-view videos. However, they fail to reconstruct the dynamic scenes and struggle to fit even the training views in unsynchronized settings. It happens because they employ a single latent embedding for a frame while the multi-view images at the frame were actually captured at different moments. To address this limitation, we introduce time offsets for individual unsynchronized videos and jointly optimize the offsets with NeRF. By design, our method is applicable for various baselines and improves them with large margins. Furthermore, finding the offsets naturally works as synchronizing the videos without manual effort. Experiments are conducted on the common Plenoptic Video Dataset and a newly built Unsynchronized Dynamic Blender Dataset to verify the performance and robustness of our method.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Results
+                </h3>
+                <video poster="" id="results" autoplay controls muted playsinline width="100%;">
+                    <source src="videos/results.mp4"
+                            type="video/mp4">
+                </video><br>
+                <p class="text-justify">
+                    To show the effectiveness of our method, we created an Unsynchronized Plenoptic Video Dataset that intentionally perturbed synchronization. In the video, the left side is the baseline and the right is a model that applied our method to the baseline. 
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Method Overview
+                </h3>
+                <h4>
+                    Problem Statement
+                </h4>
+                <br>
+                <image src="img/problem.png" style="width:100%;" alt="problem statement"></image>
+                <br>
+                <p class="text-justify">
+                    In an ideal situation, a specific frame captures the same moment of the scene across multiple cameras. 
+                    However, the video synchronization process requires manual efforts and even if the videos are assumed to be synchronized, there can be a temporal mismatch within a frame. <br><br>
+
+                    Existing methods can be problematic without considering the time deviations when the input views are unsynchronized. 
+                    Comparably, <b>Sync-NeRF</b> resolves this problem by learning time offsets $\delta$ that model the temporal gap for each training view.
+                    It works as assigning correct temporal latent embeddings to unsynchronized videos, which is equivalent to the synchronizing process by shifting.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    Our synchronized temporal embedding
+                </h4>
+                <br>
+                <image src="img/embedding.png" style="width:100%;" alt="continuous temporal embedding"></image>
+                <br>
+                <p class="text-justify">
+                    We introduce two approaches for modeling temporal embedding in dynamic NeRF. On models using per-frame temporal embeddings, we present an implicit function $T_{\theta}$, which takes the time $t_k$ calibrated by the time offset $\delta_k$ as input and outputs temporal embedding $z(t_k)$. On grid-based models, we query the embedding at the calibrated time $t_k$. 
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <!-- <image src="img/rays.jpg" class="img-responsive" alt="overview"><br> -->
+                <p class="indent-text"; style="background-color: whitesmoke;">
+                    @article{Kim2024Sync, <br>
+                        title={Sync-NeRF: Generalizing Dynamic NeRFs to Unsynchronized Videos}, <br>
+                        author={Seoha Kim, Jeongmin Bae, Youngsik Yun, Hahyun Lee, Gun Bang, Youngjung Uh}, <br>
+                        booktitle={AAAI}, <br>
+                        year={2024}}
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                The website template was borrowed from <a href="https://bakedsdf.github.io/">BakedSDF</a>.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

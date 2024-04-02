@@ -1,0 +1,25 @@
+experiences:
+
+- place: "ETRI"
+  time: "2022.11 - Present"
+  title: "Academic-Research Cooperation"
+  subtitle: "Dynamic Scene Reconstruction Research"
+  category: "work"
+
+- place: "Socar"
+  time: "2021.3 ‑ 2021.12"
+  title: "Academic-Industrial Cooperation"
+  subtitle: "Object Localization Research"
+  category: "work"
+
+- place: "Yonsei University"
+  time: "2021 – "
+  title: "Ph.D Student"
+  subtitle: "Artificial Intelligence"
+  category: "school"
+
+- place: "Kookmin University"
+  time: "2013 - 2020"
+  title: "B.S. Student"
+  subtitle: "Electronics & Information System Engineering"
+  category: "school"
