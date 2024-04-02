@@ -32,10 +32,10 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h2 class="title is-1 publication-title">Per-Gaussian Embedding based Deformation <br> for Deformable 3D Gaussian Splatting</h2>
+          <h2 class="title is-2 publication-title">Per-Gaussian Embedding based Deformation <br> for Deformable 3D Gaussian Splatting</h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              Jeongmin Bae*<sup>1</sup>, Seoha Kim*<sup>1</sup>, Youngsik Yun<sup>1</sup>, 
+              Jeongmin Bae<sup>1</sup>*, Seoha Kim<sup>1</sup>*, Youngsik Yun<sup>1</sup>, 
               Hahyun Lee<sup>2</sup>, Gun Bang<sup>2</sup>, Youngjung Uh<sup>1</sup></span> <br>
               <span class="author-block">
                 1 Yonsei University, 2 ETRI</span>
@@ -53,7 +53,7 @@
         <source src=".\videos\teaser.mp4"
                 type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-justified">
         Existing field-based deformable 3D Gaussian Splatting methods predict Gaussian deformations at similar locations to be entangled. 
         As a result, dynamic Gaussians influence adjacent static Gaussians, causing static regions to move along the nearby dynamic regions and exhibit degraded quality (<em>left</em>). 
         Our model solves the problem by employing <b>per-Gaussian latent embeddings</b> to predict deformation and achieves a clearer representation of dynamic motion (<em>right</em>).
@@ -61,47 +61,6 @@
     </div>
   </div>
 </section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="is-centered has-text-centered">
-      <!-- Comparison. -->
-      <h2 class="title is-2">Analysis</h2>
-        <h2 class="title is-4">Deformation components</h2>
-        <video poster="" autoplay controls muted loop playsinline width="70%">
-          <source src=".\videos\deformation.mp4"
-                  type="video/mp4">
-        </video>
-        <div class="content has-text-justified">
-          <p>Our SlowFast deformation consists of two decoders, each in charge of coarse and fine deformation. 
-            The video above is the result of rendering each deformation removed from the trained model.
-            <b>(a)</b> When both deformations are removed, rendering yields an image in canonical space. 
-            <b>(b)</b> Rendering with the coarse deformation, which handles large or slow changes in the scene, produces results similar to the full rendering. 
-            <b>(c)</b> On the other hand, fine deformation is responsible for fast or detailed changes in the scene, yielding rendering similar to canonical space.
-            <b>(d)</b> Our full rendering results are the result of the addition of coarse and fine deformation to the canonical space. 
-          </p>
-        </div>
-
-        <h2 class="title is-4">Visualization of the magnitude of deformation</h2>
-        <video poster="" autoplay controls muted loop playsinline width="70%">
-          <source src=".\videos\magnitude.mp4"
-                  type="video/mp4">
-        </video>
-        <div class="content has-text-justified">
-          <p>We visualize the magnitude of position changes in the deformation of Gaussian parameters.
-            <b>Coarse deformation</b> (<em>blue</em>) captures <b>large and slow changes</b>, such as the movement of
-            the head and torso, while <b>fine deformation</b> (<em>red</em>) is responsible for the <b>fast and detailed
-            changes</b> of arms, tongs, shadows, <em>etc</em>. 
-            By downscaling and sampling the temporal embedding grid for coarse decoder, 
-            our model can effectively separate and model slow and fast deformations in the scene. 
-            Please see the main paper for the details of our method.
-          </p>
-        </div>
-      </div>
-  </div>
-</section>
-
 
 
 <section class="hero is-small">
@@ -223,6 +182,44 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="is-centered has-text-centered">
+      <!-- Comparison. -->
+      <h2 class="title is-2">Analysis</h2>
+        <h2 class="title is-4">Deformation components</h2>
+        <video poster="" autoplay controls muted loop playsinline width="70%">
+          <source src=".\videos\deformation.mp4"
+                  type="video/mp4">
+        </video>
+        <div class="content has-text-justified">
+          <p>Our SlowFast deformation consists of two decoders, each in charge of coarse and fine deformation. 
+            The video above is the result of rendering each deformation removed from the trained model.
+            <b>(a)</b> When both deformations are removed, rendering yields an image in canonical space. 
+            <b>(b)</b> Rendering with the coarse deformation, which handles large or slow changes in the scene, produces results similar to the full rendering. 
+            <b>(c)</b> On the other hand, fine deformation is responsible for fast or detailed changes in the scene, yielding rendering similar to canonical space.
+            <b>(d)</b> Our full rendering results are the result of the addition of coarse and fine deformation to the canonical space. 
+          </p>
+        </div>
+
+        <h2 class="title is-4">Visualization of the magnitude of deformation</h2>
+        <video poster="" autoplay controls muted loop playsinline width="70%">
+          <source src=".\videos\magnitude.mp4"
+                  type="video/mp4">
+        </video>
+        <div class="content has-text-justified">
+          <p>We visualize the magnitude of position changes in the deformation of Gaussian parameters.
+            <b>Coarse deformation</b> (<em>blue</em>) captures <b>large and slow changes</b>, such as the movement of
+            the head and torso, while <b>fine deformation</b> (<em>red</em>) is responsible for the <b>fast and detailed
+            changes</b> of arms, tongs, shadows, <em>etc</em>. 
+            By downscaling and sampling the temporal embedding grid for coarse decoder, 
+            our model can effectively separate and model slow and fast deformations in the scene. 
+            Please see the main paper for the details of our method.
+          </p>
+        </div>
+      </div>
+  </div>
+</section>
 
 </body>
 </html>
