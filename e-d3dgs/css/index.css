@@ -193,3 +193,18 @@ video {
 .slider-pagination .slider-page {
   box-shadow: 0 2px 5px #323232c2;
 }
+
+.results-carousel:hover {
+  transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+video:not(.results-carousel video):hover {
+  transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
