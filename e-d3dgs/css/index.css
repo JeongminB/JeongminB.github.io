@@ -208,3 +208,6 @@ video:not(.results-carousel video):hover {
   -moz-transform: scale(1.5);
   -o-transform: scale(1.5);
 }
+video::-webkit-media-controls {
+  opacity: 0.5;
+}
