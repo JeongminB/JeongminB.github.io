@@ -201,13 +201,13 @@ video {
   -moz-transform: scale(1.5);
   -o-transform: scale(1.5);
 }
-video:not(.results-carousel video):hover {
+/* video:not(.results-carousel video):hover {
   transform: scale(1.5);
   -ms-transform: scale(1.5);
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   -o-transform: scale(1.5);
-}
+} */
 video::-webkit-media-controls {
   opacity: 0.5;
 }
