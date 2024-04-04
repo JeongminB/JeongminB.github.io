@@ -58,7 +58,8 @@
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <span class="link-block">
+
+              <!-- <span class="link-block">
                 <a target="_blank" href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -66,7 +67,8 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
+
               <!-- Video Link. -->
               <span class="link-block">
                 <a target="_blank" href=""
@@ -140,10 +142,31 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
+      <object data="images/method_final.pdf" type="application/pdf" width="100%"></object>
     <div class="container has-text-centered">
-      <h2 class="title is-2" style="margin-top: 60px;">Rendering Videos</h2>
+      <h2 class="title is-2" style="margin-top: 60px;">Overview</h2>
       <h2 class="subtitle has-text-justified">
-        We show the rendering results on three datasets: Neural 3D Video Dataset, Technicolor Light Field Dataset, and HyperNeRF dataset. 
+        Existing field-based deformation methods suffer from the entanglement of nearby Gaussians as they map the changes of deformation parameters from Gaussian coordinates. 
+        To this end, we define per-Gaussian deformation. 
+        <br><br>
+        <b>(a)</b> Firstly, we assign a latent embedding for each Gaussian. <br>
+        <b>(b)</b> Additionally, we introduce coarse and fine temporal embeddings to represent the slow and fast state of the dynamic scene. <br>
+        <b>(c)</b> By employing two decoders that take per-Gaussian latent embeddings along with coarse and fine temporal embeddings as input, we estimate slow or large changes and fast or detailed changes to model the final deformation, respectively. 
+        <br>
+        <br>
+      </h2>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+    <div class="container has-text-centered">
+      <h2 class="title is-2" style="margin-top: 60px;">Rendered Results</h2>
+      <h2 class="subtitle has-text-justified">
+        We show the rendered videos on three datasets: Neural 3D Video Dataset, Technicolor Light Field Dataset, and HyperNeRF dataset. 
         Our approach achieves high-quality rendering while effectively modeling complex dynamic changes.
         <br>
         <br>
@@ -216,7 +239,7 @@
               <div class="column">
                 <figure>
                   <video poster="" autoplay controls muted loop playsinline height="100%">
-                    <source src=".\videos\technicolor\1_birthday.mp4"
+                    <source src=".\videos\technicolor\1_train.mp4"
                             type="video/mp4">
                   </video>
                 </figure>
@@ -231,7 +254,7 @@
               <div class="column">
                 <figure>
                   <video poster="" autoplay controls muted loop playsinline height="100%">
-                    <source src=".\videos\technicolor\2_train.mp4"
+                    <source src=".\videos\technicolor\2_birthday.mp4"
                             type="video/mp4">
                   </video>
                 </figure>
@@ -275,7 +298,7 @@
               <div class="column">
                 <figure>
                   <video poster="" autoplay controls muted loop playsinline height="100%">
-                    <source src=".\videos\hypernerf\1_chicken.mp4"
+                    <source src=".\videos\hypernerf\1_broom.mp4"
                             type="video/mp4">
                   </video>
                 </figure>
@@ -290,7 +313,7 @@
               <div class="column">
                 <figure>
                   <video poster="" autoplay controls muted loop playsinline height="100%">
-                    <source src=".\videos\hypernerf\2_broom.mp4"
+                    <source src=".\videos\hypernerf\2_chicken.mp4"
                             type="video/mp4">
                   </video>
                 </figure>
