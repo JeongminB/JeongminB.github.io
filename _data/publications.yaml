@@ -5,7 +5,7 @@ papers:
     # paper_pdf: ""
     # project: "https://JeongminB.github.io/e-d3dgs"
     # code: "https://github.com/JeongminB/E-D3DGS"
-    venue: "Sumitted to NeuㄱIPS 2024"
+    venue: "Sumitted to NeurIPS 2024"
     selected: y
     image: "/assets/publications/lerf_preview.jpg"
 
