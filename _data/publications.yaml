@@ -6,7 +6,7 @@ papers:
     # project: "https://JeongminB.github.io/e-d3dgs"
     # code: "https://github.com/JeongminB/E-D3DGS"
     venue: "Sumitted to NeurIPS 2024"
-    selected: y
+    selected: n
     image: "/assets/publications/lerf_preview.jpg"
 
   - title: "Per-Gaussian Embedding based Deformation for Deformable 3D Gaussian Splatting"
@@ -34,7 +34,7 @@ papers:
     project: "https://minjung-s.github.io/ballgan"
     code: "https://github.com/minjung-s/BallGAN"
     venue: "ICCV 2023"
-    selected: y
+    selected: n
     image: "/assets/publications/ballgan_preview.png"
 
   - title: "Furrygan: High quality foreground-aware image synthesis"
