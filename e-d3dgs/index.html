@@ -109,9 +109,10 @@
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-justified">
-        Existing field-based deformable 3D Gaussian Splatting methods predict Gaussian deformations at similar locations to be entangled. 
-        As a result, dynamic Gaussians influence adjacent static Gaussians, causing static regions to move along the nearby dynamic regions and exhibit degraded quality (<em>left</em>). 
-        Our model solves the problem by employing <b>per-Gaussian latent embeddings to predict deformation for each Gaussian</b> and achieves a clearer representation of dynamic motion (<em>right</em>).
+        Existing field-based approaches are constrained by the resolution of the grid which models the deformation field, the capacity of the model, or the frequencies of the input.
+        As a result, the existing study does not properly represent complex dynamic scenes (<em>left</em>), and even introducing an additional feature grid that is twice the maximum resolution has only a slight improvement in performance (<em>middle</em>). 
+        Instead of using field representation, our model solves this problem by employing <b>per-Gaussian latent embeddings to predict deformation for each Gaussian</b> 
+and achieves a clearer representation of dynamic motion (<em>right</em>).
       </h2>
       </div>
   </div>
@@ -125,13 +126,7 @@
     <div class="container has-text-centered">
       <h2 class="title is-2" style="margin-top: 60px;">Abstract</h2>
       <h2 class="subtitle has-text-justified">
-        As 3D Gaussian Splatting (3DGS) provides fast and high-quality novel view synthesis, it is a natural extension to deform a canonical 3DGS to multiple frames. 
-        However, previous works fail to accurately reconstruct dynamic scenes, especially 1) static parts moving along nearby dynamic parts, and 2) some dynamic areas are blurry. 
-        We attribute the failure to the wrong design of the deformation field, which is built as a coordinate-based function. 
-        This approach is problematic because 3DGS is a mixture of multiple fields centered at the Gaussians, not just a single coordinate-based framework. 
-        To resolve this problem, we define the deformation as a function of per-Gaussian embeddings and temporal embeddings. 
-        Moreover, we decompose deformations as coarse and fine deformations to model slow and fast movements, respectively. 
-        Also, we introduce an efficient training strategy for faster convergence and higher quality. 
+         As 3D Gaussian Splatting (3DGS) provides fast and high-quality novel view synthesis, it is a natural extension to deform a canonical 3DGS to multiple frames for representing a dynamic scene. However, previous works fail to accurately reconstruct complex dynamic scenes. We attribute the failure to the design of the deformation field, which is built as a coordinate-based function. This approach is problematic because 3DGS is a mixture of multiple fields centered at the Gaussians, not just a single coordinate-based framework. To resolve this problem, we define the deformation as a function of per-Gaussian embeddings and temporal embeddings. Moreover, we decompose deformations as coarse and fine deformations to model slow and fast movements, respectively. Also, we introduce a local smoothness regularization for per-Gaussian embedding to improve the details in dynamic regions.  
       </h2>
     </div>
     </div>
@@ -145,12 +140,12 @@
       <h2 class="title is-2" style="margin-top: 60px;">Overview</h2>
       <img src="images/method_final.png" alt="Rendered Results" style="max-width:100%;height:auto;">
       <h2 class="subtitle has-text-justified">
-        Existing field-based deformation methods suffer from the entanglement of nearby Gaussians as they map the changes of deformation parameters from Gaussian coordinates. 
+        Existing coordinate-based network methods struggle to represent complex dynamic scenes. 
         To this end, we define per-Gaussian deformation. 
         <br><br>
-        <b>(a)</b> Firstly, we assign a latent embedding for each Gaussian. <br>
-        <b>(b)</b> Additionally, we introduce coarse and fine temporal embeddings to represent the slow and fast state of the dynamic scene. <br>
-        <b>(c)</b> By employing two decoders that take per-Gaussian latent embeddings along with coarse and fine temporal embeddings as input, we estimate slow or large changes and fast or detailed changes to model the final deformation, respectively. 
+        <b>(a)</b> Firstly, we assign a latent embedding for each Gaussian. Additionally, we introduce coarse and fine temporal embeddings to represent the slow and fast state of the dynamic scene. <br>
+        <b>(b)</b> By employing two decoders that take per-Gaussian latent embeddings along with coarse and fine temporal embeddings as input, we estimate slow or large changes and fast or detailed changes to model the final deformation, respectively.  <br>
+        <b>(c)</b> Finally, we introduce a local smoothness regularization so that the embeddings of neighboring Gaussians are similar.
       </h2>
     </div>
     </div>
