@@ -19,6 +19,15 @@ papers:
     selected: y
     image: "/assets/publications/sync-nerf_preview.png"
 
+  - title: "Rethinking Open-Vocabulary Segmentation of Radiance Fields in 3D Space"
+    authors: "Hyunjee Lee<sup>‡</sup>, Youngsik Yun<sup>‡</sup>, <b>Jeongmin Bae</b>, Seoha Kim, Youngjung Uh"
+    paper_pdf: "https://arxiv.org/abs/2408.07416"
+    project: "https://hyunji12.github.io/Open3DRF/"
+    # code: "https://github.com/hyunji12/Open3DRF"
+    venue: "Under Review"
+    selected: y
+    image: "/assets/publications/open3drf_preview.png"
+
   - title: "Ballgan: 3d-aware image synthesis with a spherical background"
     authors: "Minjung Shin, Yunji Seo, <b>Jeongmin Bae</b>, Young Sun Choi, Hyunsu Kim, Hyeran Byun, Youngjung Uh"
     paper_pdf: "https://arxiv.org/abs/2301.09091"
