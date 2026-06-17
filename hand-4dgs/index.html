@@ -161,6 +161,7 @@
       <p class="subtitle has-text-justified">
         We evaluate two settings: <strong>Hand-4DGS (Per-Video)</strong>, which trains directly on each target video for comparison with scene-specific optimization baselines, and <strong>Hand-4DGS (Generalized)</strong>, which trains on other sequences and tests on unseen videos.
       </p>
+      <br>
 
       <h3 class="title is-4 has-text-centered dataset-title">H2O Dataset</h3>
       <video class="result-video" src="resources/videos/h2o1.mp4" autoplay controls muted loop playsinline></video>
@@ -183,12 +184,12 @@
         <img class="result-image" src="resources/images/novelview.png" alt="Novel view synthesis results">
       </div>
 
+
       <p class="caption has-text-justified">
         The framework achieves improved visual quality on subject4_h1 sequences. The generalized model is evaluated on unseen sequences.
       </p>
-
       <div class="has-text-centered">
-        <img class="result-image compact-image" src="resources/images/novelview2.png" alt="Additional novel view synthesis results" style="width: 60%;">
+        <img class="result-image compact-image" src="resources/images/novelview2.png" alt="Additional novel view synthesis results" style="width: 50%;">
       </div>
     </div>
   </section>
@@ -199,11 +200,10 @@
       <p class="subtitle has-text-justified">
         Hand-4DGS improves upon initial pose estimates from HaMeR, while baseline methods degrade below the initial accuracy.
       </p>
-
       <div class="has-text-centered">
-        <img class="result-image compact-image" src="resources/images/posequan.png" alt="Hand pose estimation quantitative results" style="width: 60%;">
+        <img class="result-image compact-image" src="resources/images/posequan.png" alt="Hand pose estimation quantitative results" style="width: 50%;">
       </div>
-
+      <br>
       <p class="caption has-text-justified">
         Predicted hand vertices are shown in blue and ground truth in red. Hand-4DGS maintains consistent alignment across frames, while baselines show drift and misalignment.
       </p>
