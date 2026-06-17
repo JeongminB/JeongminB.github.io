@@ -1,56 +1,78 @@
 papers:
 
-  - title: "Per-Gaussian Embedding based Deformation for Deformable 3D Gaussian Splatting"
-    authors: "<b>Jeongmin Bae<sup>‡</sup></b>, Seoha Kim<sup>‡</sup>, Youngsik Yun, Hahyun Lee, Gun Bang, Youngjung Uh"
-    paper_pdf: "https://arxiv.org/abs/2404.03613"
-    project: "https://JeongminB.github.io/e-d3dgs"
-    code: "https://github.com/JeongminB/E-D3DGS"
-    venue: "ECCV 2024"
-    selected: y
-    image: "/assets/publications/e-d3dgs_preview.png"
+- title: "Hand-4DGS: Feed-Forward 3D Gaussian Splatting for 4D Hand Reconstruction from Egocentric Videos"
+  authors: "<b>Jeongmin Bae<sup>‡</sup></b>, Seoha Kim<sup>‡</sup>, Marc Pollefeys, Madhi Rad, Youngjung Uh, Taein Kwon"
+  project: "https://JeongminB.github.io/hand-4dgs"
+  venue: "Under Review"
+  selected: y
+  image: "/assets/publications/hand4dgs_preview.png"
+  image_coming_soon: y
 
-  - title: "Sync-NeRF: Generalizing Dynamic NeRFs to Unsynchronized Videos"
-    authors: "Seoha Kim<sup>‡</sup>, <b>Jeongmin Bae<sup>‡</sup></b>, Youngsik Yun, Hahyun Lee, Gun Bang, Youngjung Uh"
-    paper_pdf: "https://arxiv.org/abs/2310.13356.pdf"
-    project: "https://seoha-kim.github.io/sync-nerf"
-    code: "https://github.com/seoha-kim/Sync-NeRF"
-    data: "http://drive.google.com/drive/folders/1wvLtucVrmFf7fj-kWr-HMk3boaI46cIX?usp=sharing"
-    venue: "AAAI 2024"
-    selected: y
-    image: "/assets/publications/sync-nerf_preview.png"
+- title: "4D Scaffold Gaussian Splatting with Dynamic-Aware Anchor Growing for Efficient and High-Fidelity Dynamic Scene Reconstruction"
+  authors: "Woong Oh Cho, In Cho, Seoha Kim, <b>Jeongmin Bae</b>, Youngjung Uh, Seon Joo Kim"
+  paper_pdf: "https://arxiv.org/abs/2411.17044"
+  code: "https://github.com/raikuma/4D-Scaffold-GS"
+  venue: "AAAI 2026"
+  selected: y
+  image: "/assets/publications/4dscaffoldgs_preview.png"
 
-  - title: "Optimizing Dynamic NeRF and 3DGS with No Video Synchronization"
-    authors: "Seoha Kim<sup>‡</sup>, <b>Jeongmin Bae</b><sup>‡</sup>, Youngsik Yun, Hahyun Lee, Gun Bang, Youngjung Uh"
-    paper_pdf: "https://openreview.net/forum?id=RQutkn4V9I"
-    # project: "https://seoha-kim.github.io/sync-nerf"
-    # code: "https://github.com/seoha-kim/Sync-NeRF"
-    venue: "ECCV 2024 Wild3D Workshop"
-    selected: y
-    image: "/assets/publications/sync-4drf_preview.jpg"
+- title: "Compensating Spatiotemporally Inconsistent Observations for Online Dynamic 3D Gaussian Splatting"
+  authors: "Youngsik Yun, <b>Jeongmin Bae</b>, Hyunseung Son, Seoha Kim, Hahyun Lee, Gun Bang, Youngjung Uh"
+  paper_pdf: "https://arxiv.org/abs/2505.01235"
+  project: "https://bbangsik13.github.io/OR2/"
+  code: "https://github.com/bbangsik13/OR2"
+  venue: "SIGGRAPH 2025"
+  selected: y
+  image: "/assets/publications/online3dgs_preview.png"
 
-  - title: "Rethinking Open-Vocabulary Segmentation of Radiance Fields in 3D Space"
-    authors: "Hyunjee Lee<sup>‡</sup>, Youngsik Yun<sup>‡</sup>, <b>Jeongmin Bae</b>, Seoha Kim, Youngjung Uh"
-    paper_pdf: "https://arxiv.org/abs/2408.07416"
-    project: "https://hyunji12.github.io/Open3DRF/"
-    # code: "https://github.com/hyunji12/Open3DRF"
-    venue: "Under Review"
-    selected: y
-    image: "/assets/publications/open3drf_preview.png"
+- title: "Rethinking Open-Vocabulary Segmentation of Radiance Fields in 3D Space"
+  authors: "Hyunjee Lee<sup>‡</sup>, Youngsik Yun<sup>‡</sup>, <b>Jeongmin Bae</b>, Seoha Kim, Youngjung Uh"
+  paper_pdf: "https://arxiv.org/abs/2408.07416"
+  project: "https://hyunji12.github.io/Open3DRF/"
+  venue: "AAAI 2025"
+  selected: y
+  image: "/assets/publications/open3drf_preview.png"
 
-  - title: "Ballgan: 3d-aware image synthesis with a spherical background"
-    authors: "Minjung Shin, Yunji Seo, <b>Jeongmin Bae</b>, Young Sun Choi, Hyunsu Kim, Hyeran Byun, Youngjung Uh"
-    paper_pdf: "https://arxiv.org/abs/2301.09091"
-    project: "https://minjung-s.github.io/ballgan"
-    code: "https://github.com/minjung-s/BallGAN"
-    venue: "ICCV 2023"
-    selected: n
-    image: "/assets/publications/ballgan_preview.png"
+- title: "Per-Gaussian Embedding based Deformation for Deformable 3D Gaussian Splatting"
+  authors: "<b>Jeongmin Bae<sup>‡</sup></b>, Seoha Kim<sup>‡</sup>, Youngsik Yun, Hahyun Lee, Gun Bang, Youngjung Uh"
+  paper_pdf: "https://arxiv.org/abs/2404.03613"
+  project: "https://JeongminB.github.io/e-d3dgs"
+  code: "https://github.com/JeongminB/E-D3DGS"
+  venue: "ECCV 2024"
+  selected: y
+  image: "/assets/publications/e-d3dgs_preview.png"
 
-  - title: "Furrygan: High quality foreground-aware image synthesis"
-    authors: "<b>Jeongmin Bae</b>, Mingi Kwon, Youngjung Uh"
-    paper_pdf: "https://arxiv.org/abs/2208.10422"
-    project: "https://jeongminb.github.io/FurryGAN/"
-    code: "https://github.com/JeongminB/FurryGAN_official"
-    venue: "ECCV 2022"
-    selected: y
-    image: "/assets/publications/furrygan_preview.png"
+- title: "Optimizing Dynamic NeRF and 3DGS with No Video Synchronization"
+  authors: "Seoha Kim<sup>‡</sup>, <b>Jeongmin Bae<sup>‡</sup></b>, Youngsik Yun, Hahyun Lee, Gun Bang, Youngjung Uh"
+  paper_pdf: "https://openreview.net/forum?id=RQutkn4V9I"
+  venue: "ECCV 2024 Wild3D Workshop"
+  selected: y
+  image: "/assets/publications/sync-4drf_preview.jpg"
+
+- title: "Sync-NeRF: Generalizing Dynamic NeRFs to Unsynchronized Videos"
+  authors: "Seoha Kim<sup>‡</sup>, <b>Jeongmin Bae<sup>‡</sup></b>, Youngsik Yun, Hahyun Lee, Gun Bang, Youngjung Uh"
+  paper_pdf: "https://arxiv.org/abs/2310.13356.pdf"
+  project: "https://seoha-kim.github.io/sync-nerf"
+  code: "https://github.com/seoha-kim/Sync-NeRF"
+  data: "http://drive.google.com/drive/folders/1wvLtucVrmFf7fj-kWr-HMk3boaI46cIX?usp=sharing"
+  venue: "AAAI 2024"
+  selected: y
+  image: "/assets/publications/sync-nerf_preview.png"
+
+- title: "BallGAN: 3D-aware Image Synthesis with a Spherical Background"
+  authors: "Minjung Shin, Yunji Seo, <b>Jeongmin Bae</b>, Young Sun Choi, Hyunsu Kim, Hyeran Byun, Youngjung Uh"
+  paper_pdf: "https://arxiv.org/abs/2301.09091"
+  project: "https://minjung-s.github.io/ballgan"
+  code: "https://github.com/minjung-s/BallGAN"
+  venue: "ICCV 2023"
+  selected: n
+  image: "/assets/publications/ballgan_preview.png"
+
+- title: "FurryGAN: High Quality Foreground-aware Image Synthesis"
+  authors: "<b>Jeongmin Bae</b>, Mingi Kwon, Youngjung Uh"
+  paper_pdf: "https://arxiv.org/abs/2208.10422"
+  project: "https://jeongminb.github.io/FurryGAN/"
+  code: "https://github.com/JeongminB/FurryGAN_official"
+  venue: "ECCV 2022"
+  selected: y
+  image: "/assets/publications/furrygan_preview.png"

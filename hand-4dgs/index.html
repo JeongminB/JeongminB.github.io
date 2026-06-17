@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Hand-4DGS: Feed-Forward 3D Gaussian Splatting for 4D Hand Reconstruction from Egocentric Videos">
+  <meta name="keywords" content="Hand-4DGS, 4D Gaussian Splatting, hand reconstruction, egocentric video">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hand-4DGS</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+
+  <style>
+    body {
+      font-family: "Noto Sans", sans-serif;
+    }
+
+    .publication-title {
+      font-family: "Google Sans", sans-serif;
+      line-height: 1.18;
+    }
+
+    .publication-authors {
+      font-family: "Google Sans", sans-serif;
+    }
+
+    .author-block {
+      display: inline-block;
+      margin: 0 0.15rem;
+    }
+
+    .section {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .section-heading {
+      margin-bottom: 1.25rem;
+    }
+
+    .result-video,
+    .result-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #e5e5e5;
+      background: #f7f7f7;
+    }
+
+    .compact-image {
+      max-width: 620px;
+      width: 100%;
+    }
+
+    .caption {
+      color: #4a4a4a;
+      font-size: 1.05rem;
+      line-height: 1.65;
+      margin-top: 1rem;
+    }
+
+    .dataset-title {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .video-gap {
+      margin-top: 1.5rem;
+    }
+
+    .publication-links {
+      margin-top: 1rem;
+    }
+
+    .coming-soon {
+      cursor: default;
+      opacity: 0.75;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">
+              Hand-4DGS: Feed-Forward 3D Gaussian Splatting for 4D Hand Reconstruction from Egocentric Videos
+            </h1>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Jeongmin Bae<sup>1,‡</sup>,</span>
+              <span class="author-block">Seoha Kim<sup>2,‡</sup>,</span>
+              <span class="author-block">Marc Pollefeys<sup>3,4</sup>,</span>
+              <span class="author-block">Madhi Rad<sup>4</sup>,</span>
+              <span class="author-block">Youngjung Uh<sup>1</sup>,</span>
+              <span class="author-block">Taein Kwon<sup>5</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Yonsei University,</span>
+              <span class="author-block"><sup>2</sup>ETRI,</span>
+              <span class="author-block"><sup>3</sup>ETH Zurich,</span>
+              <span class="author-block"><sup>4</sup>Microsoft Spatial AI Lab,</span>
+              <span class="author-block"><sup>5</sup>Visual Geometry Group, University of Oxford</span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Under Review</span>
+            </div>
+
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>‡</sup> Equal contribution</span>
+            </div>
+
+            <div class="publication-links">
+              <span class="link-block">
+                <a class="external-link button is-normal is-rounded is-dark coming-soon">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv (Coming Soon)</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a class="external-link button is-normal is-rounded is-dark coming-soon">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered section-heading">Abstract</h2>
+      <p class="subtitle has-text-justified">
+        Hand-4DGS reconstructs dynamic 4D hands from egocentric videos with a feed-forward 3D Gaussian Splatting framework. The project evaluates both per-video optimization and generalized inference on unseen sequences, showing accurate hand geometry, novel-view rendering, and improved hand pose estimation across H2O and ARCTIC settings.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered section-heading">Video Results</h2>
+      <p class="subtitle has-text-justified">
+        We evaluate two settings: <strong>Hand-4DGS (Per-Video)</strong>, which trains directly on each target video for comparison with scene-specific optimization baselines, and <strong>Hand-4DGS (Generalized)</strong>, which trains on other sequences and tests on unseen videos.
+      </p>
+
+      <h3 class="title is-4 has-text-centered dataset-title">H2O Dataset</h3>
+      <video class="result-video" src="resources/videos/h2o1.mp4" autoplay controls muted loop playsinline></video>
+      <video class="result-video video-gap" src="resources/videos/h2o2.mp4" autoplay controls muted loop playsinline></video>
+
+      <h3 class="title is-4 has-text-centered dataset-title">ARCTIC Dataset</h3>
+      <video class="result-video" src="resources/videos/arctic1.mp4" autoplay controls muted loop playsinline></video>
+      <video class="result-video video-gap" src="resources/videos/arctic2.mp4" autoplay controls muted loop playsinline></video>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered section-heading">Novel View Synthesis</h2>
+      <p class="subtitle has-text-justified">
+        Despite training on single-view egocentric videos, Hand-4DGS reconstructs accurate hand geometry from novel viewpoints, while baselines fail to maintain hand structure.
+      </p>
+
+      <div class="has-text-centered">
+        <img class="result-image" src="resources/images/novelview.png" alt="Novel view synthesis results">
+      </div>
+
+      <p class="caption has-text-justified">
+        The framework achieves improved visual quality on subject4_h1 sequences. The generalized model is evaluated on unseen sequences.
+      </p>
+
+      <div class="has-text-centered">
+        <img class="result-image compact-image" src="resources/images/novelview2.png" alt="Additional novel view synthesis results" style="width: 60%;">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered section-heading">Hand Pose Estimation</h2>
+      <p class="subtitle has-text-justified">
+        Hand-4DGS improves upon initial pose estimates from HaMeR, while baseline methods degrade below the initial accuracy.
+      </p>
+
+      <div class="has-text-centered">
+        <img class="result-image compact-image" src="resources/images/posequan.png" alt="Hand pose estimation quantitative results" style="width: 60%;">
+      </div>
+
+      <p class="caption has-text-justified">
+        Predicted hand vertices are shown in blue and ground truth in red. Hand-4DGS maintains consistent alignment across frames, while baselines show drift and misalignment.
+      </p>
+
+      <video class="result-video" src="resources/videos/pose.mp4" autoplay controls muted loop playsinline></video>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <a href="https://jeongminb.github.io/">Back to Jeongmin Bae</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

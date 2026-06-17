@@ -3,13 +3,26 @@ layout: default
 title: Home
 ---
 <!-- ========== BIO ========== -->
+
 <div class="docs-section" id="bio">
   <h4>About</h4>
   <p>
-    I am currently in the 4th year of Integrated PhD program in AI at Yonsei University, advised by Prof. <a href="https://vilab.yonsei.ac.kr/member/professor" target="_blank">Youngjung Uh</a>. <br>
-  My research interests are 3D/4D reconstruction, especially with Neural Radiance Fields and Gaussian Splatting.
-  </p> 
+     I am currently a Postdoctoral Research Fellow in the School of Computing and Information Systems (CIS) at the University of Melbourne, working with Prof.
+    <a href="https://findanexpert.unimelb.edu.au/profile/1084098-taehyun-rhee" target="_blank">Taehyun Rhee</a>.
+    I received my Ph.D. in Artificial Intelligence from Yonsei University, where I was advised by Prof.
+    <a href="https://vilab.yonsei.ac.kr/members/professor" target="_blank">Youngjung Uh</a>.
+    <br><br>
+
+My research lies in 3D/4D computer vision, neural rendering, and dynamic scene reconstruction.
+I am particularly interested in Gaussian Splatting, Neural Radiance Fields (NeRF), hand-object interaction,
+egocentric vision, and spatial computing.<br><br>
+
+Currently, I am working on mixed reality projects using multiple 360° panoramic cameras integrated with LiDAR sensors,
+while pursuing research on real-time 3D perception and reconstruction from egocentric videos.
+
+  </p>
 </div>
+
 
 <!-- ========== PUBLICATIONS ========== -->
 <div class="docs-section" id="publications">
@@ -77,7 +90,13 @@ title: Home
         <div class="row" style="display: flex;align-items: center;">
           <div class="four columns">
             <div class="figure">
-              <img src="{{ paper.image }}" width="100%">
+              {% if paper.image_coming_soon %}
+                <div style="width: 100%; min-height: 130px; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; background: #f7f7f7; color: #666; font-weight: 600; letter-spacing: 0.02em;">
+                  Coming Soon
+                </div>
+              {% else %}
+                <img src="{{ paper.image }}" width="100%">
+              {% endif %}
             </div>
           </div>
           <div class="eight columns">
@@ -223,12 +242,17 @@ title: Home
 
 </div>
 <div class="docs-section" id="patents">
-  <h4>Korean Patents</h4>
+  <h4>Patents</h4>
   <p>
-  10-2024-0043684, Method and apparatus for Dynamic Gaussian Splatting using embedding-based deformation<br>
-  10-2023-0105173, Apparatus for representing dynamic neural radiance fields from unsynchronized videos
-  </p> 
+    KR 10-2024-0043684 / US 2025/0308078 A1<br>
+    Method and Apparatus for Decoding Image<br><br>
+
+KR 10-2023-0105173 / US 2025/0054224 A1<br>
+Method and Apparatus for Representing Dynamic Neural Radiance Fields from Unsynchronized Videos
+
+  </p>
 </div>
+
 <!-- 
 
 <div class="docs-section" id="template">

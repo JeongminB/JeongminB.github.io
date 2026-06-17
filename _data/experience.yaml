@@ -1,25 +1,31 @@
 experiences:
 
+- place: "University of Melbourne"
+  time: "2026.03 - Present"
+  title: "Postdoctoral Research Fellow"
+  subtitle: "Dynamic Scene Reconstruction and Mixed Reality"
+  category: "work"
+
+- place: "Yonsei University"
+  time: "2022.02 - 2026.02"
+  title: "Ph.D. in Artificial Intelligence"
+  subtitle: "Visual Intelligence Lab"
+  category: "school"
+
 - place: "ETRI"
-  time: "2022.11 - Present"
+  time: "2022.11 - 2025.03"
   title: "Academic-Research Cooperation"
   subtitle: "Dynamic Scene Reconstruction Research"
   category: "work"
 
 - place: "Socar"
-  time: "2021.3 ‑ 2021.12"
+  time: "2021.03 - 2021.12"
   title: "Academic-Industrial Cooperation"
   subtitle: "Object Localization Research"
   category: "work"
 
-- place: "Yonsei University"
-  time: "2021 – "
-  title: "Ph.D Student"
-  subtitle: "Artificial Intelligence"
-  category: "school"
-
 - place: "Kookmin University"
-  time: "2013 - 2020"
-  title: "B.S. Student"
-  subtitle: "Electronics & Information System Engineering"
+  time: "2013.03 - 2021.02"
+  title: "B.S. in Electronic Engineering"
+  subtitle: "School of Electronic Engineering"
   category: "school"
