@@ -1,7 +1,7 @@
 papers:
 
 - title: "Hand-4DGS: Feed-Forward 3D Gaussian Splatting for 4D Hand Reconstruction from Egocentric Videos"
-  authors: "<b>Jeongmin Bae<sup>‡</sup></b>, Seoha Kim<sup>‡</sup>, Marc Pollefeys, Madhi Rad, Youngjung Uh, Taein Kwon"
+  authors: "<b>Jeongmin Bae<sup>‡</sup></b>, Seoha Kim<sup>‡</sup>, Marc Pollefeys, Mahdi Rad, Youngjung Uh, Taein Kwon"
   project: "https://JeongminB.github.io/hand-4dgs"
   venue: "Under Review"
   selected: y
