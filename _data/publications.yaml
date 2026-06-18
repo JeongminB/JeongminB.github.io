@@ -6,8 +6,7 @@ papers:
   paper_pdf: "https://arxiv.org/abs/2606.19156"
   venue: "Under Review"
   selected: y
-  image: "/assets/publications/hand4dgs_preview.png"
-  image_coming_soon: y
+  image: "/assets/publications/hand-4dgs_preview.png"
 
 - title: "4D Scaffold Gaussian Splatting with Dynamic-Aware Anchor Growing for Efficient and High-Fidelity Dynamic Scene Reconstruction"
   authors: "Woong Oh Cho, In Cho, Seoha Kim, <b>Jeongmin Bae</b>, Youngjung Uh, Seon Joo Kim"
